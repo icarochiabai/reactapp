@@ -1,0 +1,107 @@
+:root{
+  --highlight-color: green;
+  --highlight-size: 72px;
+  
+}
+
+html, body, #root{
+  background-color: #080708;
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrapper{
+  height: 100%;
+}
+
+.nav-list{
+  height: 64px;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  background-color: #0A0A0A;
+
+  --border-bottom-size: 1px;
+  --border-bottom-color: #FDCA40;
+}
+
+.nav-item{
+  display: flex;
+  align-items: center;
+  height: 100%;
+
+  color: white;
+  font-weight: 300;
+
+  margin-right: 2rem;
+  padding: 16px;
+
+  list-style: none;
+  border-bottom: var(--border-bottom-size) solid transparent;
+  transition: .3s ease-in-out;
+}
+
+.nav-item > a{
+  color: white;
+  text-decoration: none;
+}
+
+.nav-item:hover{
+  border-bottom: var(--border-bottom-size) solid var(--border-bottom-color);
+}
+
+.nav-item:first-child{
+  margin-right: auto;
+  margin-left: 2rem;
+}
+
+.nav-item:first-child:hover{
+  border-bottom: var(--border-bottom-size) solid transparent;
+}
+
+.header-content{
+  height: calc(100% - 64px);
+  overflow: hidden;
+  position: relative;
+  color:wheat;
+
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+}
+
+.header-content h1 {
+  z-index:2;
+  margin-left: 2rem;
+  position: relative;
+  
+  color: #FDFDFD;
+}
+
+.header-content:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    opacity: 0.1;
+    background-image: url("../../assets/aristoteles-head.svg");
+    background-repeat: no-repeat;
+    background-position: 75% 0;
+}
+
+.big-header-content-text{
+  font-size: var(--highlight-size);
+  color: var(--highlight-color)
+}
+
+.blob{
+  position: absolute;
+  width: 60%;
+  opacity: 0.2;
+}
