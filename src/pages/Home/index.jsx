@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './style.css'
-import aristoteles from '../../assets/aristoteles-head.svg'
+import logo from '../../assets/logo.svg'
 import { HighlightText } from '../../components/HighlightText'
 
 export function Home() {
@@ -9,7 +9,7 @@ export function Home() {
       <div id="navbar">
         <ul className="nav-list">
           <li className="nav-item">
-            <a href="#navbar">logo</a>
+            <a href="#navbar"><img src={logo} alt="Logo" /></a>
           </li>
           <li className="nav-item">
             <a href="#1">SOBRE</a>
@@ -27,7 +27,7 @@ export function Home() {
         <div className="blob">
           <svg viewBox="0 0 800 500" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"  width="100%">
             <g transform="translate(145.69458770751953, 4.216714859008789)">
-              <path fill="#DF2935">
+              <path fill="#a2013f">
                 <animate attributeName="d"
                   dur="120s"
                   repeatCount="indefinite"
@@ -43,8 +43,8 @@ export function Home() {
             </g>
           </svg>
         </div>
-        <h1> <span className="big-header-content-text" style={{fontSize: "102px", color:"#FDCA40"}}> EXCELÊNCIA </span> <br />
-        é um <span className="big-header-content-text" style={{color:"#FDCA40"}}> HÁBITO </span>
+        <h1> <span className="big-header-content-text" style={{fontSize: "102px", color:"#a0003e"}}> EXCELÊNCIA </span> <br />
+        é um <span className="big-header-content-text" style={{color:"#ac2459"}}> HÁBITO </span>
         </h1>
       </div>
 
