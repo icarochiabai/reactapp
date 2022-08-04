@@ -1,0 +1,27 @@
+.navbar {
+    width: 100%;
+
+    position: absolute;
+    bottom: 0px;
+}
+
+.navbar > ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar > ul > li{
+    list-style: none;
+    margin-right: 2rem;
+}
+
+.navbar > ul > li > a {
+    text-decoration: none;
+    color:white;
+    transition: .3s ease-in-out;
+}
+
+.navbar > ul > li > a:hover{
+    font-size: larger;
+}

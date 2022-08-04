@@ -1,12 +1,17 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
+import React from "react";
+import ReactDOM from "react-dom/client";
+import About from "./pages/About";
+import Contact from "./pages/Contact/Contact";
+import Home from "./pages/Home/Home";
+import Projects from "./pages/Projects";
 
-import { Home } from './pages/Home'
+import "./styles/global.css";
 
-import './styles/global.css'
-
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <Home />
-  </React.StrictMode>
-)
+ReactDOM.createRoot(document.getElementById("root")).render(
+	<React.StrictMode>
+		<Home />
+		<About />
+		<Projects />
+		<Contact />
+	</React.StrictMode>
+);
