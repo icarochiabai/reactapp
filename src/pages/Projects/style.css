@@ -3,3 +3,32 @@
     height: 100%;
 }
 
+#projects{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:48px;
+}
+
+#projects > h1 {
+    font-size: 72px;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding-left: 6%;
+
+    --bg-display: rgba(3, 25, 39, 0.4);
+    background-color:var(--bg-display);
+}
+
+#project-cards{
+    width: 100%;
+    height: 100%;
+
+    display:flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    align-items: bottom;
+}
+

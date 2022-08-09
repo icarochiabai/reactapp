@@ -8,10 +8,10 @@ import Projects from "./pages/Projects";
 import "./styles/global.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-	<React.StrictMode>
+	<>
 		<Home />
 		<About />
 		<Projects />
 		<Contact />
-	</React.StrictMode>
+	</>
 );
